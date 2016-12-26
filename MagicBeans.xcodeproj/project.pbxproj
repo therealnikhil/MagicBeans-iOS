@@ -10,10 +10,10 @@
 		317863911E10B1CD00759B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317863901E10B1CD00759B67 /* AppDelegate.swift */; };
 		317863931E10B1CD00759B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317863921E10B1CD00759B67 /* ViewController.swift */; };
 		317863961E10B1CD00759B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317863941E10B1CD00759B67 /* Main.storyboard */; };
-		317863981E10B1CD00759B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317863971E10B1CD00759B67 /* Assets.xcassets */; };
 		3178639B1E10B1CD00759B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317863991E10B1CD00759B67 /* LaunchScreen.storyboard */; };
 		317863A61E10B1CD00759B67 /* MagicBeansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317863A51E10B1CD00759B67 /* MagicBeansTests.swift */; };
 		317863B11E10B1CD00759B67 /* MagicBeansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317863B01E10B1CD00759B67 /* MagicBeansUITests.swift */; };
+		317863C51E10F9A500759B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317863C41E10F9A500759B67 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		317863901E10B1CD00759B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317863921E10B1CD00759B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		317863951E10B1CD00759B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		317863971E10B1CD00759B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3178639A1E10B1CD00759B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3178639C1E10B1CD00759B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		317863A11E10B1CD00759B67 /* MagicBeansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBeansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		317863AC1E10B1CD00759B67 /* MagicBeansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBeansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317863B01E10B1CD00759B67 /* MagicBeansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBeansUITests.swift; sourceTree = "<group>"; };
 		317863B21E10B1CD00759B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317863C41E10F9A500759B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			children = (
 				317863901E10B1CD00759B67 /* AppDelegate.swift */,
 				317863921E10B1CD00759B67 /* ViewController.swift */,
+				317863C41E10F9A500759B67 /* Assets.xcassets */,
 				317863941E10B1CD00759B67 /* Main.storyboard */,
-				317863971E10B1CD00759B67 /* Assets.xcassets */,
 				317863991E10B1CD00759B67 /* LaunchScreen.storyboard */,
 				3178639C1E10B1CD00759B67 /* Info.plist */,
 			);
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3178639B1E10B1CD00759B67 /* LaunchScreen.storyboard in Resources */,
-				317863981E10B1CD00759B67 /* Assets.xcassets in Resources */,
+				317863C51E10F9A500759B67 /* Assets.xcassets in Resources */,
 				317863961E10B1CD00759B67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +514,7 @@
 				317863B71E10B1CD00759B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317863B81E10B1CD00759B67 /* Build configuration list for PBXNativeTarget "MagicBeansTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				317863BA1E10B1CD00759B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317863BB1E10B1CD00759B67 /* Build configuration list for PBXNativeTarget "MagicBeansUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				317863BD1E10B1CD00759B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    @IBOutlet weak var magicBeansImage: UIImageView!
     @IBOutlet weak var chooseStateButton: UIButton!
     @IBOutlet weak var statePicker: UIPickerView!
+    @IBOutlet weak var dividerView: UIView!
     
     @IBOutlet weak var countryText: UITextField!
     @IBOutlet weak var countryLabel: UILabel!
@@ -40,6 +42,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.isHidden = true
         successImage.isHidden = true
         successLabel.isHidden = true
+        
+        magicBeansImage.frame.size.height = view.frame.size.height / 12
+        magicBeansImage.frame.size.width = view.frame.size.height / 12
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        successImage.frame = CGRect(x: view.frame.midX - 120, y: dividerView.frame.origin.y + ((view.frame.size.height - dividerView.frame.origin.y) / 2) - 130, width: 240, height: 196)
+        successLabel.frame = CGRect(x: view.frame.midX - 90, y: successImage.frame.origin.y + successImage.frame.size.height + 8, width: 180, height: 48)
     }
 
     override func didReceiveMemoryWarning() {

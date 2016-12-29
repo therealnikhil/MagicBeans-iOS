@@ -48,8 +48,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        successImage.frame = CGRect(x: view.frame.midX - 120, y: dividerView.frame.origin.y + ((view.frame.size.height - dividerView.frame.origin.y) / 2) - 130, width: 240, height: 196)
-        successLabel.frame = CGRect(x: view.frame.midX - 90, y: successImage.frame.origin.y + successImage.frame.size.height + 8, width: 180, height: 48)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.deviceRotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+        self.deviceRotated()
     }
 
     override func didReceiveMemoryWarning() {
@@ -105,6 +105,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         buyButton.isHidden = true
         successImage.isHidden = false
         successLabel.isHidden = false
+    }
+    
+    func deviceRotated() {
+        if UIDevice.current.orientation.isPortrait {
+            successImage.frame = CGRect(x: view.frame.midX - 120, y: dividerView.frame.origin.y + ((view.frame.size.height - dividerView.frame.origin.y) / 2) - 130, width: 240, height: 196)
+            successLabel.frame = CGRect(x: view.frame.midX - 90, y: successImage.frame.origin.y + successImage.frame.size.height + 8, width: 180, height: 48)
+        }
+        if UIDevice.current.orientation.isLandscape {
+            successImage.frame = CGRect(x: view.frame.midX - 60, y: dividerView.frame.origin.y + ((view.frame.size.height - dividerView.frame.origin.y) / 2) - 58, width: 120, height: 98)
+            successLabel.frame = CGRect(x: view.frame.midX - 45, y: successImage.frame.origin.y + successImage.frame.size.height + 4, width: 90, height: 24)
+        }
     }
 }
 
